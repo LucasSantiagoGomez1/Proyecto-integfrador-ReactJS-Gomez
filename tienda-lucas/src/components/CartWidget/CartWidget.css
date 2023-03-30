@@ -1,0 +1,14 @@
+.carrito{
+    max-width: 30px;
+    max-height: 30px;
+    justify-content: right;
+}
+
+.colorFondo{
+    background-color: white;
+}
+
+.posicionCarrito{
+    display: flex;
+    justify-content: flex-end;
+}
