@@ -1,10 +1,15 @@
-const Item = ({name, img, precio, descripcion}) => {
+import {Link} from "react-router-dom"
+import "./Item.css"
+
+const Item = ({id, name, img, precio}) => {
     return(
         <div style={{backgroundColor:"aqua"}}>
-            <h4>{name}</h4>
+            <header>
+                <h2>{name}</h2>
+            </header>
             <img src={img} alt={name} style={{width: 150}}/>
-            <p>descripcion: {descripcion}</p>
             <p>precio: ${precio}</p>
+            <Link to={`/item/${id}`} className="boton"> Ver Detalles </Link>
         </div>
     )
 }

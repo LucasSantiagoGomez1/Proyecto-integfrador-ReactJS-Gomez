@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
-import { getProducts } from "../asyncMock";
+import { getProducts } from "../asyncMock"
 import ItemList from "../ItemList/ItemList"
+
 const ItemListContainer = ({ greeting }) => {
 
     const[products, setProducts] = useState([])
@@ -13,8 +14,6 @@ const ItemListContainer = ({ greeting }) => {
         
     }, [])
     
-    console.log(products)
-
     return(
         
         <div>
