@@ -21,7 +21,7 @@ const ItemDetailContainer = () =>{
     return(
 
         <div style={{display: "flex", justifyContent: "space-evenly", margin: 30}}>
-            <ItemDetail products={products}/>
+            <ItemDetail {...products}/>
         </div>
     )
 }
