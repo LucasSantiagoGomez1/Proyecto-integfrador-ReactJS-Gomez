@@ -2,13 +2,26 @@
     background-color: aqua;
     display: flex;
     justify-content: space-evenly;
+    padding: 20px;
 }
 
-button{
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
+.button{
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px 20px;
+      border-radius: 100px;
+      text-decoration: none;
 }
 
+.titulo{
+  display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}

@@ -3,7 +3,7 @@ import "./Item.css"
 
 const Item = ({id, name, img, precio}) => {
     return(
-        <div style={{backgroundColor:"aqua", borderRadius: 10}}>
+        <div style={{backgroundColor:"aqua", borderRadius: 10, padding: 10}}>
             <header>
                 <h2>{name}</h2>
             </header>

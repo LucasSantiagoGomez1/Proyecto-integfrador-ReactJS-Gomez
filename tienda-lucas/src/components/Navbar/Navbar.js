@@ -1,14 +1,15 @@
 import "./Navbar.css";
 import Imagen from "../CartWidget/CartWidget"
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
     return (
         <nav>
-            <h1>Vestido para impresionar</h1>
+            <Link to="/" className="titulo">Vestido para impresionar</Link>
             <div class = "Navbar">
-                <button> Remeras </button>
-                <button> Pantalones </button>
-                <button> Calzados </button>
+                <Link to="category/Remeras" className="button"> Remeras </Link>
+                <Link to="category/Pantalones" className="button"> Pantalones </Link>
+                <Link to="category/Calzados" className="button"> Calzados </Link>
                 <Imagen />
             </div>
         </nav>
