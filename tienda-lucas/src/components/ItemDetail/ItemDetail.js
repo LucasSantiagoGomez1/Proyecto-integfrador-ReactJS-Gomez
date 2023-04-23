@@ -1,13 +1,13 @@
 import "./ItemDetail.css"
-import Cantidad from "../Cantidad/Cantidad"
+import ItemCount from "../Cantidad/ItemCount"
 import { useContext } from "react"
 import { Context } from "../../App"
 
-const ItemDetail = ({id, name, img, description, price, stock}) => {
+const ItemDetail = ({id, name, img, descripcion, precio, stock}) => {
 
-    const handleOnAdd = (Count) => {
+    const handleOnAdd = (quantity) => {
         const productToAdd = {
-            id, name, price, Count
+            id, name, precio, quantity
         }
         console.log(productToAdd)
     }
@@ -16,10 +16,10 @@ const ItemDetail = ({id, name, img, description, price, stock}) => {
         <div style={{backgroundColor:"aqua", borderRadius: 10}}>
             <h2>{name}</h2>
             <img src={img} alt={name} style={{width: 150}}/>
+            <p> {descripcion}</p>
             <p> stock: {stock}</p>
-            <p> {description}</p>
-            <p>precio: ${price}</p>
-            <Cantidad onAdd={handleOnAdd} stock={stock}/>
+            <p>precio: ${precio}</p>
+            <ItemCount onAdd={handleOnAdd}/>
         </div>
     )
 }
