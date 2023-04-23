@@ -5,13 +5,13 @@ import { Context } from '../../App'
 
 const ItemDetail = ({id, name, img, descripcion, precio, stock}) => {
 
-    const {setCart} = useContext(Context)
+    const {addItem} = useContext(Context)
 
     const handleOnAdd = (quantity) => {
         const productToAdd = {
             id, name, precio, quantity
         }
-        setCart([productToAdd])
+        addItem(productToAdd)
     }
 
     return(
