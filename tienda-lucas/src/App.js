@@ -5,7 +5,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailCont
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { createContext, useState } from 'react';
 
-const Context = createContext ("valor inicial")
+export const Context = createContext ("valor inicial")
 
 function App () {
 
