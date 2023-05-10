@@ -2,7 +2,7 @@ import "./CartWidget.css"
 import cart from "../img/carrito.png"
 import { useCart } from "../../Context/CartContext"
 
-const Carrito = (prop) => {
+const Carrito = () => {
 
     const {totalQuantity} = useCart()
 
