@@ -31,11 +31,11 @@ export const NotificationProvider = ({children}) => {
     })
 
 
-    const setNotification = (type, text) => {
+    const setNotification = (type, text, time = 2) => {
         setNotificationData({type, text})
         setTimeout(() => {
           setNotification({type,text:""})
-        },2000)
+        }, time ? time * 1000: 2000)
     }
 
     return(

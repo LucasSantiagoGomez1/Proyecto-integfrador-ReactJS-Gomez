@@ -6,7 +6,7 @@ import { db } from "../../Service/firebase/FirebaseConfig"
 
 const ItemDetailContainer = () =>{
 
-    const[products,setProducts] = useState([])
+    const [products,setProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
     const{ itemId } = useParams();
@@ -18,7 +18,6 @@ const ItemDetailContainer = () =>{
 
         getDoc(productRef)
             .then(snapshot =>{
-                
                 const data = snapshot.data()
                 const productAdapted = {id: snapshot.id, ...data}
                 setProducts(productAdapted)
